@@ -1,0 +1,35 @@
+
+@import "tailwindcss";
+
+
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  overflow: hidden; 
+}
+
+:root {
+  --primary-bg: #417571; /* teal-600 */
+  --primary-text: #ffffff;
+}
+
+/* .fullscreen-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+@layer components {
+  .fullscreen-bg {
+    @apply w-screen h-screen flex flex-col justify-center items-center text-center text-white;
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
+  }
+}
+
+
