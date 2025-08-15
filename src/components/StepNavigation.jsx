@@ -12,6 +12,7 @@ export default function StepNavigation({ onNext, label = "متابعة" }) {
       onClick={onNext}
     >
       {label}
+      
     </button>
   );
 }
